@@ -36,7 +36,9 @@
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Create a <code>fabfile.py</code> in your project directory. You can see example of a fabfile below.</p>
+<p>Create a <code>fabfile.py</code> in your project directory. You can see example of a fabfile below. If you 
+run into problems with settings where fabric cannot locate settings add 
+<code>sys.path.append(os.path.dirname(__file__))</code> to your fabfile.</p>
 
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">fabric.decorators</span> <span class="kn">import</span> <span class="n">task</span>
 <span class="kn">from</span> <span class="nn">fabric.state</span> <span class="kn">import</span> <span class="n">env</span>
