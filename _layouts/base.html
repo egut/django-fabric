@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>mocco - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='//mocco.no/style.css' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="http://mocco.no/favicon.png" />
+  </head>
+  <body>
+    <section class="row">
+      <div class="col-md-4">
+        <img src="//mocco.no/mocco.svg" rel="logo" type="image/svg" title="mocco" alt="mocco" />
+        <div class="meta">
+          <div class="lead">
+            {{ page.description }}
+          </div>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mocco&amp;repo={{ page.github }}&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px" kwframeid="3"></iframe>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mocco&amp;repo={{ page.github }}&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="105px" height="20px" kwframeid="4"></iframe>
+        </div>
+      </div>
+      <div class="project-description col-md-8">
+        {{ content }}
+      </div>
+    </section>
+  </body>
+</html>
+
